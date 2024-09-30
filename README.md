@@ -1,5 +1,7 @@
 # Yolov11-Easy-Use-Object-Detection-Segmentation-Classification# YOLOv11: Enhanced Object Detection
 
+# YOLOv11: Enhanced Object Detection
+
 ## Table of Contents
 
 - [Introduction](#introduction)
