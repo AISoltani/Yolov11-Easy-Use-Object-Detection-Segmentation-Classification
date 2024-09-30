@@ -61,3 +61,21 @@ Compared to previous versions of YOLO, YOLOv11 introduces several key improvemen
 
 ```bash
 pip install ultralytics
+
+```
+
+Usage
+Model Inference
+Once you've installed all dependencies and downloaded the pretrained weights, you can start making predictions using YOLOv11.
+```bash
+from yolov11 import YOLO
+
+# Load model
+model = YOLO(weights="yolov11-weights.pth")
+
+# Perform inference
+results = model.detect('path/to/image.jpg')
+
+# Display results
+model.show(results)
+```
