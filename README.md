@@ -1,6 +1,6 @@
 # Yolov11-Easy-Use-Object-Detection-Segmentation-Classification
 
-# YOLOv11: Enhanced Object Detection-Custom Dataset
+Enhanced Object Detection-Custom Dataset
 
 ## Table of Contents
 
