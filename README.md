@@ -63,10 +63,26 @@ Compared to previous versions of YOLO, YOLOv11 introduces several key improvemen
 pip install ultralytics
 
 ```
+Model training
+Once you've installed all dependencies and downloaded the pretrained weights, you can start training using YOLOv11.
+```bash
+from ultralytics import YOLO
 
-Usage
+import torch
+
+model = YOLO('/home/af/Vision/OBB/runs/obb/train7/weights/best.pt')
+# Assuming 'model' is your trained model
+
+# model.load_state_dict(torch.load('yolo_nas_s.pt'))
+# Display model information (optional)
+model.info()
+
+# Train the model on the COCO8 example dataset for 100 epochs
+results = model.train(data='map.yaml', epochs=500, imgsz=1024,batch = 14)
+```
+
 Model Inference
-Once you've installed all dependencies and downloaded the pretrained weights, you can start making predictions using YOLOv11.
+Now start making predictions using YOLOv11.
 ```bash
 from yolov11 import YOLO
 
