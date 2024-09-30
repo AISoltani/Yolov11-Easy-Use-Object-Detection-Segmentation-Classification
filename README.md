@@ -79,3 +79,33 @@ results = model.detect('path/to/image.jpg')
 # Display results
 model.show(results)
 ```
+
+
+Training Custom Data
+You can also train the YOLOv11 model on your own dataset. Make sure your data is prepared in the correct format (e.g., COCO, YOLO annotation formats).
+
+```bash
+python train.py --data path/to/data.yaml --epochs 100 --batch-size 16 --img-size 640
+```
+This command will start training the model using your custom dataset. The --data flag should point to the .yaml configuration file that specifies your dataset's location, classes, and other relevant parameters
+
+##Acknowledgments
+This project utilizes the YOLOv11 architecture provided by Ultralytics. We would like to express our gratitude to the Ultralytics team for their continuous work on developing advanced models for object detection. The YOLO series has been instrumental in pushing the boundaries of real-time object detection, and YOLOv11 continues that tradition with further improvements in accuracy, speed, and flexibility.
+
+The original repository and official models can be found on Ultralytics' GitHub page: Ultralytics YOLOv11
+
+If you find this implementation useful, please consider starring their repository and citing their work as described below.
+
+
+##Citations
+If you use this codebase or YOLOv11 in your work, please cite the original Ultralytics repository as follows:
+```bash
+@article{YOLOv11_Ultralytics,
+  author    = {Ultralytics},
+  title     = {YOLOv11: Real-Time Object Detection},
+  journal   = {GitHub repository},
+  year      = {2024},
+  url       = {https://github.com/ultralytics/ultralytics}
+}
+
+```
